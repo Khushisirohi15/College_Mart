@@ -26,23 +26,6 @@ Used to setup text Chat Application between Buyer and the seller.
 - #### JWT
 Used this Authenctication System to make sure the user is logged in before accessing any personal info on the site
 
-
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/yashjoshi-dotcom/College_Bazaar.git
-```
-
-Go to the project directory
-
-```bash
-  cd College_Bazaar
-```
-
 - Split the terminal to run both frontend and backend conviniently.
 
 To Open frontend directory.
@@ -78,13 +61,6 @@ Please make sure you have config.env file setup in the backend directory. The Fo
 
 
 https://user-images.githubusercontent.com/77540753/197020778-9bb78963-4498-43f7-9ddc-423d0c6dbbc9.mov
-
-
-## Authors
-This Project would not have been possible without the immense  help of following people.
-- [@Yuvraj](https://github.com/YUVRAJg37)
-- [@Tanush Chaudhary](https://github.com/Tanush15)
-- [@Yash Joshi](https://github.com/yashjoshi-dotcom)
 
 
 ## Roadmap
