@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Managing the backend of college mart",
   "engines": {
-    "node": "18.18.2"
+    "node": "24.x"
   },
   "main": "app.js",
   "scripts": {
