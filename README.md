@@ -72,5 +72,5 @@ https://user-images.githubusercontent.com/77540753/197020778-9bb78963-4498-43f7-
 
 ## Live Demo
 
-college-mart-cedn.vercel.app
+-college-mart-cedn.vercel.app
 
