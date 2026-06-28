@@ -38,7 +38,7 @@ test('Sign in with missing password', () => __awaiter(void 0, void 0, void 0, fu
     const res = yield (0, supertest_1.default)(app_1.default)
         .post('/signin')
         .send({
-        email_id: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
         password: '',
     })
         .expect(400);
@@ -49,7 +49,7 @@ test('Sign in with invalid email_id', () => __awaiter(void 0, void 0, void 0, fu
     const res = yield (0, supertest_1.default)(app_1.default)
         .post('/signin')
         .send({
-        email_id: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
         password: 'SomeRandomPassword',
     })
         .expect(400);
@@ -62,16 +62,16 @@ test('Sign in successfully', () => __awaiter(void 0, void 0, void 0, function* (
         .post('/register')
         .send({
         name: 'Test',
-        email_id: 'Test@dtu.ac.in',
-        password: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
+        password: 'Test@miet.ac.in',
     })
         .expect(201);
     // Then, sign in with the registered user's credentials
     const res = yield (0, supertest_1.default)(app_1.default)
         .post('/signin')
         .send({
-        email_id: 'Test@dtu.ac.in',
-        password: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
+        password: 'Test@miet.ac.in',
     })
         .expect(200);
     expect(res.body.message).toBe('Login Successful');
@@ -81,7 +81,7 @@ test('Sign in with invalid password', () => __awaiter(void 0, void 0, void 0, fu
     const res = yield (0, supertest_1.default)(app_1.default)
         .post('/signin')
         .send({
-        email_id: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
         password: 'InvalidPassword',
     })
         .expect(403);

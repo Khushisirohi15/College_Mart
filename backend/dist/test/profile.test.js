@@ -35,16 +35,16 @@ test('Access profile data successfully', () => __awaiter(void 0, void 0, void 0,
         .post('/register')
         .send({
         name: 'Test',
-        email_id: 'Test@dtu.ac.in',
-        password: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
+        password: 'Test@miet.ac.in',
     })
         .expect(201);
     // Then, sign in with the registered user's credentials to get the authentication token
     const signInRes = yield (0, supertest_1.default)(app_1.default)
         .post('/signin')
         .send({
-        email_id: 'Test@dtu.ac.in',
-        password: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
+        password: 'Test@miet.ac.in',
     })
         .expect(200);
     const token = signInRes.headers['set-cookie'][0].split('=')[1].split(';')[0];
@@ -53,7 +53,7 @@ test('Access profile data successfully', () => __awaiter(void 0, void 0, void 0,
         .get('/profilec')
         .set('Cookie', `jwtoken=${token}`)
         .expect(200);
-    expect(res.body.email_id).toBe('Test@dtu.ac.in');
+    expect(res.body.email_id).toBe('Test@miet.ac.in');
 }));
 // Test for accessing profile data with an invalid token
 test('Access profile data with an invalid token', () => __awaiter(void 0, void 0, void 0, function* () {

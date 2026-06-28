@@ -170,11 +170,11 @@ const CallAboutPage= async()=>
                                             </div>
                                             <div class="flex">
                                                 <div class="px-4 py-2 font-semibold w-[50%]">College.</div>
-                                                <div class="px-4 py-2 w-[50%]">Delhi Technological University</div>
+                                                <div class="px-4 py-2 w-[50%]">MIET</div>
                                             </div>
                                             <div class="flex">
                                                 <div class="px-4 py-2 font-semibold w-[50%]">State</div>
-                                                <div class="px-4 py-2 w-[50%]">New Delhi</div>
+                                                <div class="px-4 py-2 w-[50%]">MEERUT</div>
                                             </div>
                                             <div class="flex">
                                                 <div class="px-4 py-2 font-semibold w-[50%]">Email.</div>

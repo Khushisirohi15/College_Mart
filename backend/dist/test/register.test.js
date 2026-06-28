@@ -28,7 +28,7 @@ test('Register a new User with missing name', () => __awaiter(void 0, void 0, vo
         .post('/register')
         .send({
         name: '',
-        email_id: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
         password: 'SomeRandomPassword',
     })
         .expect(409);
@@ -52,7 +52,7 @@ test('Register a new User with missing password', () => __awaiter(void 0, void 0
         .post('/register')
         .send({
         name: 'Test',
-        email_id: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
         password: '',
     })
         .expect(409);
@@ -76,8 +76,8 @@ test('Register a new User successfully', () => __awaiter(void 0, void 0, void 0,
         .post('/register')
         .send({
         name: 'Test',
-        email_id: 'Test@dtu.ac.in',
-        password: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
+        password: 'Test@miet.ac.in',
     })
         .expect(201);
     expect(res.body.message).toBe('Registered sucessfully');
@@ -88,8 +88,8 @@ test('Re-registering already existing User', () => __awaiter(void 0, void 0, voi
         .post('/register')
         .send({
         name: 'Test',
-        email_id: 'Test@dtu.ac.in',
-        password: 'Test@dtu.ac.in',
+        email_id: 'Test@miet.ac.in',
+        password: 'Test@miet.ac.in',
     })
         .expect(403);
     expect(res.body.error).toBe('{Forbidden to create multiple accounts} Email already exists');
@@ -103,8 +103,8 @@ test('Server error response', () => __awaiter(void 0, void 0, void 0, function* 
         .post('/register')
         .send({
         name: 'Test2',
-        email_id: 'Test2@dtu.ac.in',
-        password: 'Test2@dtu.ac.in',
+        email_id: 'Test2@miet.ac.in',
+        password: 'Test2@miet.ac.in',
     })
         .expect(500);
     expect(res.body.error).toBe('We are experiencing some server problems!!');

@@ -27,7 +27,7 @@ const userSchema = new mongoose_1.default.Schema({
     },
     college_name: {
         type: String,
-        default: 'Delhi Technological University',
+        default: 'MIET',
     },
     password: {
         type: String,
