@@ -68,6 +68,4 @@ https://user-images.githubusercontent.com/77540753/197020778-9bb78963-4498-43f7-
 - Additional Sign in Options with Google and Github
 - Adding Lost and FOund Item Section
 - Adding Wishlist functionality
-  # College Mart
-
 
