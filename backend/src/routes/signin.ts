@@ -40,7 +40,8 @@ router.post('/', async (req: express.Request, res: express.Response) => {
         .json({ message: 'Invalid Email ID. Pls register before signing in' });
     }
   } catch (err) {
-    console.error(err);
+    console.error("Signin Error:", err);
+    
     return res.status(500).json({
       message:"Internal Server Error"
     });
