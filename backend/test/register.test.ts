@@ -17,7 +17,7 @@ test('Register a new User with missing name', async () => {
     .post('/register')
     .send({
       name: '',
-      email_id: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
       password: 'SomeRandomPassword',
     })
     .expect(409);
@@ -49,7 +49,7 @@ test('Register a new User with missing password', async () => {
     .post('/register')
     .send({
       name: 'Test',
-      email_id: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
       password: '',
     })
     .expect(409);
@@ -81,8 +81,8 @@ test('Register a new User successfully', async () => {
     .post('/register')
     .send({
       name: 'Test',
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(201);
 
@@ -95,8 +95,8 @@ test('Re-registering already existing User', async () => {
     .post('/register')
     .send({
       name: 'Test',
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(403);
 
@@ -115,8 +115,8 @@ test('Server error response', async () => {
     .post('/register')
     .send({
       name: 'Test2',
-      email_id: 'Test2@dtu.ac.in',
-      password: 'Test2@dtu.ac.in',
+      email_id: 'Test2@miet.ac.in',
+      password: 'Test2@miet.ac.in',
     })
     .expect(500);
 

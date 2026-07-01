@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Managing the backend of college mart",
   "engines": {
-    "node": "24.x"
+    "node": "20.x"
   },
   "main": "app.js",
   "scripts": {
     "test": "node_modules\\.bin\\env-cmd -f config/test.env jest --runInBand",
-    "start": "node index.js",
+    "start": "ts-node index.ts",
     "dev": "node_modules\\.bin\\env-cmd -f config/dev.env nodemon index.ts",
     "ts-start": "node_modules\\.bin\\env-cmd -f config/dev.env nodemon index.ts",
     "lint": "eslint . --ext .ts",

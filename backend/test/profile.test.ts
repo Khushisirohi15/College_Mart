@@ -26,8 +26,8 @@ test('Access profile data successfully', async () => {
     .post('/register')
     .send({
       name: 'Test',
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(201);
 
@@ -35,8 +35,8 @@ test('Access profile data successfully', async () => {
   const signInRes = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(200);
 
@@ -48,7 +48,7 @@ test('Access profile data successfully', async () => {
     .set('Cookie', `jwtoken=${token}`)
     .expect(200);
 
-  expect(res.body.email_id).toBe('Test@dtu.ac.in');
+  expect(res.body.email_id).toBe('Test@miet.ac.in');
 });
 
 // Test for accessing profile data with an invalid token

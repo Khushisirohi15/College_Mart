@@ -29,7 +29,7 @@ test('Sign in with missing password', async () => {
   const res = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
       password: '',
     })
     .expect(400);
@@ -42,7 +42,7 @@ test('Sign in with invalid email_id', async () => {
   const res = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
       password: 'SomeRandomPassword',
     })
     .expect(400);
@@ -59,8 +59,8 @@ test('Sign in successfully', async () => {
     .post('/register')
     .send({
       name: 'Test',
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(201);
 
@@ -68,8 +68,8 @@ test('Sign in successfully', async () => {
   const res = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(200);
 
@@ -81,7 +81,7 @@ test('Sign in with invalid password', async () => {
   const res = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
       password: 'InvalidPassword',
     })
     .expect(403);

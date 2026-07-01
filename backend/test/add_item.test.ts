@@ -38,8 +38,8 @@ test('Add a new listing with missing fields', async () => {
     .post('/register')
     .send({
       name: 'Test',
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(201);
 
@@ -47,8 +47,8 @@ test('Add a new listing with missing fields', async () => {
   const signInRes = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(200);
 
@@ -80,8 +80,8 @@ test('Add a new listing with invalid data', async () => {
   const signInRes = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(200);
 

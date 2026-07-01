@@ -26,8 +26,8 @@ test('Log out successfully', async () => {
     .post('/register')
     .send({
       name: 'Test',
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(201);
 
@@ -35,8 +35,8 @@ test('Log out successfully', async () => {
   const signInRes = await request(app)
     .post('/signin')
     .send({
-      email_id: 'Test@dtu.ac.in',
-      password: 'Test@dtu.ac.in',
+      email_id: 'Test@miet.ac.in',
+      password: 'Test@miet.ac.in',
     })
     .expect(200);
 

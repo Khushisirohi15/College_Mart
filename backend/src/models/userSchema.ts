@@ -44,7 +44,7 @@ const userSchema = new mongoose.Schema<IUser>({
   },
   college_name: {
     type: String,
-    default: 'Delhi Technological University',
+    default: 'MIET',
   },
   password: {
     type: String,
