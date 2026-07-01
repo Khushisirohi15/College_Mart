@@ -5,7 +5,7 @@
   "engines": {
     "node": "24.x"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://college-mart-endx.onrender.com/",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
